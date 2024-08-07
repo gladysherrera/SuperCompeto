@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.productos {
+    width: 90%;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3vw;
+    font-weight: 900;
+    color: #E09900;
+    text-align: center;
+    margin: 15px;
+    text-shadow: 0em 0.15em 0.15em rgba(0, 0, 0, 0.3);
+}
+/* ---------------------------------- */
+#cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;/*para superponer las imagenes de oferta*/
+}
+
+.cardImagen {
+    width: 50%;
+    border-radius: 10px;
+
+}
+
+.superpuesta { /*imagen superpuesta de oferta*/
+    position: absolute;
+    width: 35%;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.cardTitulo {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.cardPrecio {
+    font-weight: bold;
+    color: #333;
+}
+
+.cardPrecioTachado {
+    color: #333;
+    text-decoration: line-through;
+}
+.cardStock {
+    color: #888;
+}
+
+.cardContador { /*contenedor del input y su label*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.valorContador {
+    width: 30%;
+    font-size: 1.1em;
+    margin: 2px;
+    padding: 3px;
+}
+
+.valorLabel {
+    font-size: 0.9em;
+}
+
+.btnComprar {
+    background-color: #036a0a;
+    color: #fff;
+    border: none;
+    width: 80%;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+

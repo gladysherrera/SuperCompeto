@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    background-color: #fff;
+    box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+
+}
+
+header div {
+    width: 20%;
+    text-align: center;
+    /*para que me quede la imagen al centro*/
+}
+
+header nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    /*acomodar los links*/
+    align-items: center;
+    /*centrado en vertical*/
+}
+
+header img {
+    height: 45px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #00000099;
+}
+
+
+.botonActivo {
+    color: #E09900 !important;
+    /*por especificidad si no se pone el important nunca queda amarillo*/
+}
+
+.botonActivo:hover {
+    color: #f7b935 !important;
+}
+
+.botonNoActivo:hover {
+    color: #c3c1c1 !important;
+    background-color: #fff;
+}
+
+.menuHamburguesa {
+    display: none;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8b031;
+    color: antiquewhite;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.8em;
+
+
+    box-shadow: 0px -6px 18px -6px rgba(0, 0, 0, 0.63);
+}
+
+footer div {
+    margin: 15px;
+}
+
+footer .direccion {
+    width: 60%;
+}
+
+footer .redes {
+    width: 30%;
+}
+
+footer i {
+    color: antiquewhite;
+    font-size: 3vw;
+    padding: 10px;
+
+}
+
+#abrir,
+#cerrar {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+
+    #abrir,
+    #cerrar {
+        display: block;
+        border: 0;
+        font-size: 1.5rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    header nav {
+        width: 40%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #E09900;
+        padding: 1rem;
+        border-radius: 1%;
+        box-shadow: -5px 8px 17px -5px rgba(0, 0, 0, 0.75);
+
+        opacity: 0;
+        visibility: hidden;
+        z-index: 50;
+    }
+
+    .navVisible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav button {
+        display: block;
+
+    }
+
+    nav a {
+        padding: 10px;
+        /* border-bottom: 1px solid black;*/
+    }
+
+    .botonActivo {
+        color: antiquewhite !important;
+        /*por especificidad si no se pone el important nunca queda amarillo*/
+    }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+
+    .redes {
+        width: 90%;
+        margin: auto;
+    }
+
+    footer a i {
+        font-size: 2em;
+    }
+}

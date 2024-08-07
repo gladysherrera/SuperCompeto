@@ -1,0 +1,145 @@
+main {
+    margin-top: 10px;
+}
+
+.contenedorVideo {
+    padding: 8px;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    border: 1px solid #000000;
+}
+
+h1 {
+    font-size: 3vw;
+    /* https://marabelia.com/css-font-size-responsive/ */
+    font-weight: 900;
+    color: #E09900;
+    text-align: center;
+    text-shadow: 0em 0.15em 0.15em rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    bottom: 55%;
+    left: 0;
+    /*para centrar responsive el texto */
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedorVideo h2 {
+    /*texto sobre el video principal*/
+    font-size: 3vw;
+    font-weight: 900;
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 0em 0.15em 0.15em rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.cajaNovedades {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 0 solid #333;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    background-color: #f8b031;
+    border-radius: 5px;
+}
+
+.containerNovedades {
+    width: 60%;
+}
+
+.containerBtn {
+    width: 20%;
+}
+
+.containerBtn a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background-color: #E0951E;
+    margin: auto;
+    padding: 8px;
+    width: 80%;
+    border-radius: 2px;
+    box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 900;
+    color: #f8b031;
+    text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dosColumnas {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dosColumnas div {
+    width: 35%;
+}
+
+.dosColumnas img {
+    width: 100%;
+}
+
+.dosColumnas p {
+    line-height: 1.8em;
+    color: #666;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    line-height: 1.8em;
+}
+
+
+
+@media screen and (max-width:600px) {
+
+
+    .dosColumnas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dosColumnas div {
+        width: 90%;
+
+    }
+
+
+}
